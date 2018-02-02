@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:id="@+id/coordinatorLay"
+                                                 android:background="@color/colorPrimary"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/SplashText" android:textColor="@color/white"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/splash_text" android:layout_centerInParent="true"/>
+        <TableLayout android:id="@+id/bottomLay" android:visibility="gone" android:layout_width="match_parent"
+                     android:layout_height="match_parent" android:stretchColumns="1"
+                     android:layout_alignParentBottom="true">
+            <TableRow>
+                <Button android:textSize="@dimen/product_detail_button" android:textColor="@color/black"
+                        android:id="@+id/signin" android:background="@drawable/rounded_corner_yellow"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/halfMargin" android:layout_marginTop="@dimen/halfMargin"
+                        android:layout_marginRight="2dp" android:layout_marginBottom="@dimen/halfMargin"
+                        android:text="@string/signin" android:layout_weight="1"/>
+                <Button android:textSize="@dimen/product_detail_button" android:textColor="@color/black"
+                        android:id="@+id/signup" android:background="@drawable/rounded_corner_yellow"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp" android:layout_marginTop="@dimen/halfMargin"
+                        android:layout_marginRight="@dimen/halfMargin" android:layout_marginBottom="@dimen/halfMargin"
+                        android:text="@string/signup" android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</android.support.design.widget.CoordinatorLayout>

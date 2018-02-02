@@ -2,10 +2,189 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="Animation.Design.BottomSheetDialog">
+        <item>@anim/design_bottom_sheet_slide_in</item>
+        <item>@anim/design_bottom_sheet_slide_out</item>
+    </style>
+
+    <style name="Base.Animation.AppCompat.Tooltip">
+        <item>@anim/tooltip_enter</item>
+        <item>@anim/tooltip_exit</item>
+    </style>
+    <style name="Base.DialogWindowTitle.AppCompat">
+        <item>@style/TextAppearance.AppCompat.Title</item>
+        <item>1</item>
+        <item>true</item>
+    </style>
+
+
+    <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem">
+        <item>13</item>
+        <item>8dp</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Text">
+        <item>5</item>
+        <item>true</item>
+    </style>
+    <style name="RtlOverlay.Widget.AppCompat.Search.DropDown">
+        <item>@dimen/abc_dropdownitem_text_padding_left</item>
+        <item>4dp</item>
+    </style>
+    <style name="RtlUnderlay.Widget.AppCompat.ActionButton">
+        <item>12dp</item>
+        <item>12dp</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Tooltip">
+        <item>14sp</item>
+        <item>sans-serif</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media">
+        <item>@color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Media">
+        <item>@color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time">
+        <item>12sp</item>
+        <item>@color/white</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media">
+        <item>@color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="TextAppearance.Compat.Notification.Title.Media">
+        <item>@color/primary_text_default_material_dark</item>
+    </style>
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item>@color/black</item>
+    </style>
+    <style name="TextAppearance.Design.Counter.Overflow">
+        <item>@color/design_error</item>
+    </style>
+    <style name="TextAppearance.Design.Error">
+        <item>@color/design_error</item>
+    </style>
+    <style name="TextAppearance.Design.Hint">
+        <item>?attr/colorControlActivated</item>
+    </style>
+    <style name="TextAppearance.Design.Snackbar.Message">
+        <item>@dimen/design_snackbar_text_size</item>
+        <item>@color/white</item>
+    </style>
+    <style name="TextAppearance.Design.Tab">
+        <item>@dimen/design_tab_text_size</item>
+        <item>@color/colorPrimary</item>
+        <item>true</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar">
+        <item>false</item>
+        <item>true</item>
+    </style>
+    <style name="Theme.AppCompat.NoActionBar">
+        <item>false</item>
+        <item>true</item>
+    </style>
+    <style name="Theme.Design">
+        <item>?attr/colorError</item>
+    </style>
+    <style name="Theme.Design.BottomSheetDialog">
+        <item>?unknown_ref: 106000d</item>
+        <item>@style/Animation.Design.BottomSheetDialog</item>
+        <item>@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+    <style name="Theme.Design.Light">
+        <item>?attr/colorError</item>
+    </style>
+    <style name="Theme.Design.Light.BottomSheetDialog">
+        <!--<item>?unknown_ref: 106000d</item>-->
+        <item>@style/Animation.Design.BottomSheetDialog</item>
+        <item>@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+    <style name="Theme.Design.Light.NoActionBar">
+        <item>false</item>
+        <item>true</item>
+    </style>
+    <style name="Theme.Design.NoActionBar">
+        <item>false</item>
+        <item>true</item>
+    </style>
+    <style name="Widget.AppCompat.DrawerArrowToggle">
+        <item>?attr/colorControlNormal</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionContainer">
+        <item>@drawable/notification_action_background</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionText">
+        <!--<item>?unknown_attr_ref: 1010207</item>-->
+        <item>@dimen/notification_action_text_size</item>
+        <item>@color/secondary_text_default_material_light</item>
+    </style>
+
+    <style name="Widget.Design.BottomNavigationView">
+        <item>@dimen/design_bottom_navigation_elevation</item>
+        <item>?attr/selectableItemBackgroundBorderless</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal">
+        <!--<item>?unknown_attr_ref: 1010031</item>-->
+        <item>true</item>
+        <item>-1</item>
+        <item>false</item>
+    </style>
+
+    <style name="Widget.Design.CollapsingToolbar">
+        <item>32dp</item>
+        <item>?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="Widget.Design.CoordinatorLayout">
+        <item>?attr/colorPrimaryDark</item>
+    </style>
+    <style name="Widget.Design.FloatingActionButton">
+        <item>@drawable/design_fab_background</item>
+        <item>?attr/colorAccent</item>
+        <item>@dimen/design_fab_border_width</item>
+        <item>@dimen/design_fab_elevation</item>
+        <item>-1</item>
+        <item>@dimen/design_fab_translation_z_pressed</item>
+        <item>?attr/colorControlHighlight</item>
+    </style>
+    <style name="Widget.Design.NavigationView">
+        <!--<item>?unknown_attr_ref: 1010054</item>-->
+        <item>true</item>
+        <item>@dimen/design_navigation_max_width</item>
+        <item>@dimen/design_navigation_elevation</item>
+    </style>
+
+
+    <style name="Widget.Design.ScrimInsetsFrameLayout">
+        <item>#0000</item>
+    </style>
+    <style name="Widget.Design.Snackbar">
+        <item>@drawable/design_snackbar_background</item>
+        <item>@dimen/design_snackbar_padding_horizontal</item>
+        <item>@dimen/design_snackbar_padding_horizontal</item>
+        <item>@dimen/design_snackbar_max_width</item>
+        <item>@dimen/design_snackbar_min_width</item>
+        <item>@dimen/design_snackbar_elevation</item>
+        <item>@dimen/design_snackbar_action_inline_max_width</item>
+    </style>
+    <style name="Widget.Design.TabLayout">
+        <item>0</item>
+        <item>1</item>
+    </style>
+    <style name="Widget.Design.TextInputLayout">
+        <item>@style/TextAppearance.Design.Counter.Overflow</item>
+        <item>@style/TextAppearance.Design.Counter</item>
+        <item>@style/TextAppearance.Design.Error</item>
+        <item>@style/TextAppearance.Design.Hint</item>
+        <item>@string/password_toggle_content_description</item>
+        <item>@drawable/design_password_eye</item>
+        <item>@color/design_tint_password_toggle</item>
+    </style>
+
 
 </resources>
